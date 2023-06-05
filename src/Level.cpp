@@ -153,7 +153,7 @@ void Levels::Level::CreateLava(const sf::Vector2f pos)
     SentitiesList.insert_back(static_cast<Entities::Entity *>(pAux));
 }
 
-void Levels::Level::CreateIce(const sf::Vector2f pos)
+/*void Levels::Level::CreateIce(const sf::Vector2f pos)
 {
     Entities::Obstacles::Ice *pAux = new Entities::Obstacles::Ice(pos);
     if (!pAux)
@@ -164,6 +164,7 @@ void Levels::Level::CreateIce(const sf::Vector2f pos)
     }
     SentitiesList.insert_back(static_cast<Entities::Entity *>(pAux));
 }
+/**/
 
 void Levels::Level::CreateEntity(char id, sf::Vector2f pos)
 {
@@ -188,9 +189,10 @@ void Levels::Level::CreateEntity(char id, sf::Vector2f pos)
     case 'N':
         CreateNecroMancer(pos);
         break;
-    case 'I':
+/*    case 'I':
         CreateIce(pos);
         break;
+        /**/
     }
 }
 

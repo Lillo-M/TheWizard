@@ -11,7 +11,7 @@
 #include "../Entities/Characters/Enemies/NecroMancer.h"
 #include "../Entities/Obstacles/Ground.h"
 #include "../Entities/Obstacles/Lava.h"
-#include "../Entities/Obstacles/Ice.h"
+//#include "../Entities/Obstacles/Ice.h"
 #include "../States/State.h"
 #include "../Observers/PlayerInputManager.h"
 #include "../GraphicElements/Buttom.h"
@@ -29,7 +29,7 @@ namespace Levels
         void CreatePlayer(const sf::Vector2f pos = sf::Vector2f(0, 0));
         void CreateGround(const sf::Vector2f pos = sf::Vector2f(0, 0));
         void CreateLava(const sf::Vector2f pos = sf::Vector2f(0, 0));
-        void CreateIce(const sf::Vector2f pos = sf::Vector2f(0, 0));
+        //void CreateIce(const sf::Vector2f pos = sf::Vector2f(0, 0));
         void CreateArcher(const sf::Vector2f pos = sf::Vector2f(0, 0));
         void CreateNecroMancer(const sf::Vector2f pos);
         virtual void CreateMap() = 0;

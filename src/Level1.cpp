@@ -34,7 +34,7 @@ void Levels::Level1::CreateMap()
         {
             if (str[i] != ' ')
             {
-                CreateEntity(str[i], sf::Vector2f(i, 0));
+                CreateEntity(str[i], sf::Vector2f(i, j));
             }
         }
         j++;

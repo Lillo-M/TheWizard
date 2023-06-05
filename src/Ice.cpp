@@ -13,16 +13,15 @@ Entities::Obstacles::Ice::~Ice()
 
 void Entities::Obstacles::Ice::Move()
 {
-	HitBox.setPosition(Position);
     Gravity();
     Velocity.y -= forca_empuxo * dt * MULT;
+    Position.y += Velocity.y;
 }
 
 void Entities::Obstacles::Ice::Update()
 {
     this->Move();
     animation.Update(Position);
-    Position.y += Velocity.y;
 }
 
 void Entities::Obstacles::Ice::OnCollision(Entities::Entity* ent)
